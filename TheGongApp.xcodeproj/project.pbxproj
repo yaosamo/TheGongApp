@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DB858B92E1261B6005BEE64 /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 5DB858B82E1261B6005BEE64 /* Vortex */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5D390B1B2E07D536002337D4 /* TheGongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheGongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9AC63A2E0FE039002E498A /* TheGongApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TheGongApp copy-Info.plist"; path = "/Users/yaroslavsamoylov/Git/TheGongApp/TheGongApp copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5D9AC6302E0FE032002E498A /* Exceptions for "TheGongApp" folder in "TheGongApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5D390B1A2E07D536002337D4 /* TheGongApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5D390B1D2E07D536002337D4 /* TheGongApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D9AC6302E0FE032002E498A /* Exceptions for "TheGongApp" folder in "TheGongApp" target */,
+			);
 			path = TheGongApp;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB858B92E1261B6005BEE64 /* Vortex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				5D390B1D2E07D536002337D4 /* TheGongApp */,
+				5D9AC63A2E0FE039002E498A /* TheGongApp copy-Info.plist */,
 				5D390B1C2E07D536002337D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +85,7 @@
 			);
 			name = TheGongApp;
 			packageProductDependencies = (
+				5DB858B82E1261B6005BEE64 /* Vortex */,
 			);
 			productName = TheGongApp;
 			productReference = 5D390B1B2E07D536002337D4 /* TheGongApp.app */;
@@ -94,6 +115,9 @@
 			);
 			mainGroup = 5D390B122E07D536002337D4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DB858B72E1261B6005BEE64 /* XCRemoteSwiftPackageReference "Vortex" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5D390B1C2E07D536002337D4 /* Products */;
 			projectDirPath = "";
@@ -258,6 +282,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheGongApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gong App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -286,6 +313,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheGongApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gong App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5DB858B72E1261B6005BEE64 /* XCRemoteSwiftPackageReference "Vortex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Vortex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5DB858B82E1261B6005BEE64 /* Vortex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DB858B72E1261B6005BEE64 /* XCRemoteSwiftPackageReference "Vortex" */;
+			productName = Vortex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D390B132E07D536002337D4 /* Project object */;
 }

@@ -9,10 +9,10 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
-    var timestamp: Date
+final class GongStats {
+    var hitCount: Int
     
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+    init(hitCount: Int) {
+        self.hitCount = hitCount
     }
 }

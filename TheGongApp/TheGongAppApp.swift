@@ -12,7 +12,7 @@ import SwiftData
 struct TheGongAppApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            GongStats.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -27,6 +27,7 @@ struct TheGongAppApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.hiddenTitleBar) // ✅ Hide title bar
         .modelContainer(sharedModelContainer)
     }
 }

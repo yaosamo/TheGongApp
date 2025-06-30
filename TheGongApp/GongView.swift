@@ -104,4 +104,3 @@ class GongSound {
     ContentView()
         .modelContainer(for: GongStats.self, inMemory: true)
 }
-
